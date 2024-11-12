@@ -1,0 +1,114 @@
+:root {
+  --base1: #10002b;
+  --base2: #240046;
+  --base3: #3c096c;
+  --base4: #5a189a;
+  --base5: #7b2cbf;
+  --base6: #9d4edd;
+  --base7: #c77dff;
+  --base8: #e0aaff;
+
+  --blanco: #ffffff;
+}
+
+body {
+  background-color: var(--blanco);
+  margin: 0; /* Elimina el margen predeterminado */
+  overflow: hidden;
+}
+
+.menu {
+  top: 0;
+  font-family: Arial, sans-serif;
+  position: relative; /* Cambiado a relative para que el menú se desplace con el contenido */
+  background-color: var(--base8);
+  min-height: 10vh; /* Cambiado a vh para un tamaño más adaptable */
+  width: 100%; /* Asegura que el menú ocupe todo el ancho */
+  font-size: 20px;
+  display: grid; /*  */
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 24px; /* Tamaño del logo */
+  color: var(--base1); /* Color del logo */
+}
+
+nav {
+  text-align: left;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0; /* Elimina el padding */
+  margin: 0; /* Elimina el margen */
+  display: flex; /* Alinea los elementos de la lista en fila */
+}
+
+nav ul li {
+  margin: 5px; /* Espaciado entre elementos */
+}
+
+nav ul li a {
+  color: rgb(240, 235, 235);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s; /* Agrega una transición suave al color */
+}
+
+nav ul li a:hover {
+  color: var(--base5); /* Cambia el color al pasar el ratón */
+}
+#cont {
+  top: 10%;
+  position: absolute;
+  background-color: var(--base4);
+  width: 100%;
+  height: 90%; /* Cambiado para ajustarse al espacio restante */
+  display: flex; /* Utiliza Flexbox para centrar el contenido */
+  justify-content: center; /* Centra horizontalmente */
+}
+
+#form {
+  background-color: var(--base2); /* Color de fondo para el formulario */
+  padding: 20px; /* Espaciado interno */
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  width: 100%; /* Ancho del formulario */
+  height: 100%;
+  text-align: center;
+}
+
+#form h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#resultadoBuscar {
+  height: 10%;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en una columna */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  text-align: center; /* Centra el texto */
+  margin-top: 20px; /* Espacio superior opcional */
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 22px 12px rgba(135, 135, 135, 1);
+  -moz-box-shadow: 0px 0px 22px 12px rgba(135, 135, 135, 1);
+  box-shadow: 0px 0px 22px 12px rgba(135, 135, 135, 1);
+}
+.buscar {
+  background-color: var(--base4);
+  color: white;
+  border: none;
+
+  cursor: pointer;
+  border-radius: 4px;
+}
+.buscar:hover {
+  background-color: var(--base7);
+}
